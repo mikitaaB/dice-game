@@ -22,7 +22,7 @@ class ProbabilityTable {
     static showTable() {
         const table = new Table('Probability of the wins for the user:');
         const cols = this.dices.map(diceOption => diceOption.join(','));
-        table.setHeading('User \\ Computer', ...cols);
+        table.setHeading('User dice v', ...cols);
 
         this.dices.forEach((userDice, i) => {
             const rowData = [userDice.join(',')];
